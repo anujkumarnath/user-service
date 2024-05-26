@@ -7,7 +7,11 @@ const isEmail = (string) => {
 
 module.exports = new MongooseSchema(
 	{
-		name: { type: 'String', required: true },
+		name: {
+			type: 'String',
+			required: true,
+			minLength: 1,
+		},
 
 		email: {
 			type: 'String',
