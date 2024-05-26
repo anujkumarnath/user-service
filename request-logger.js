@@ -1,12 +1,9 @@
 module.exports = (req, res, next) => {
+	const method   = req.method;
+	const ip       = req.ip;
+	const hostname = req.ip;
+	const path     = req.path;
 
-	console.log({
-		path    : req.path,
-		method  : req.method,
-		baseUrl : req.baseUrl,
-		query   : req.query,
-		params  : req.params,
-	});
-
+	console.log(`[${method}]${ip} => ${hostname}${path}`);
 	next();
 };
