@@ -1,5 +1,5 @@
 class ValidationError extends Error {
-	constructor(message, { statusCode, cause, code, errors }) {
+	constructor(message, { statusCode, cause, code, errors } = {}) {
 		super(message, { cause });
 		this.name       = this.constructor.name;
 		this.statusCode = statusCode || 400;
@@ -9,7 +9,7 @@ class ValidationError extends Error {
 }
 
 class ApplicationError extends Error {
-	constructor(message, { statusCode, cause, code, errors }) {
+	constructor(message, { statusCode, cause, code, errors } = {}) {
 		super(message, { cause });
 		this.name       = this.constructor.name;
 		this.statusCode = statusCode || 500;
