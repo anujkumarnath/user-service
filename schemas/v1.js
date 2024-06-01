@@ -24,5 +24,8 @@ module.exports = new MongooseSchema(
 			}
 		},
 
+	},
+	{
+		collection: 'users',
 	}
 );
