@@ -1,0 +1,5 @@
+# Use this sample to create your own .env file. This is to avoid adding .env to git
+# Read why 127.0.0.1 instead of localhost: https://mongoosejs.com/docs/connections.html
+MONGO_HOST=127.0.0.1
+MONGO_PORT=27017
+MONGO_NAME=user-service

@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express       = require('express');
 const apiV1Router   = require('./routes/api-v1');
 const banner        = require('./banner');
